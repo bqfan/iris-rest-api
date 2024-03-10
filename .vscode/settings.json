@@ -11,11 +11,12 @@
         "service": "iris",
         "internalPort": 52773
       },
-      "active": true,
+      "active": false,
       "links": {
         "Swagger": "${serverUrl}/swagger-ui/index.html"
       }
-    }
+    },
+    "DockerRun.DisableDockerrc": true
 
 
 }

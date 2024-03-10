@@ -32,6 +32,43 @@ Open the terminal in this directory and run:
 $ docker-compose up -d --build
 ```
 
+Loging to Docker:
+```
+docker exec -it ca5ed4709f2845c2d21df4064962c8bfa267c3bdd0d24b4886844ed3b6ac2c93 bash
+```
+Install `swagger-ui`:
+```
+irisowner@ca5ed4709f28:~/dev$ iris terminal iris
+
+Node: ca5ed4709f28, Instance: IRIS
+
+USER>zpm
+
+=============================================================================
+|| Welcome to the Package Manager Shell (ZPM).                             ||
+|| Enter q/quit to exit the shell. Enter ?/help to view available commands ||
+=============================================================================
+zpm:USER>install swagger-ui
+[USER|swagger-ui]       Reload START (/usr/irissys/mgr/.modules/USER/swagger-ui/1.0.0/)
+[USER|swagger-ui]       Reload SUCCESS
+[swagger-ui]    Module object refreshed.
+[USER|swagger-ui]       Validate START
+[USER|swagger-ui]       Validate SUCCESS
+[USER|swagger-ui]       Compile START
+[USER|swagger-ui]       Compile SUCCESS
+[USER|swagger-ui]       Activate START
+[USER|swagger-ui]       Configure START
+[USER|swagger-ui]       Configure SUCCESS
+[USER|swagger-ui]       Activate SUCCESS
+zpm:USER>
+
+```
+Access to swagger-ui (Username: _SYSTEM, Password: SYS)
+```
+http://localhost:52773/swagger-ui/index.html
+```
+
+
 or open the folder in VSCode and do the following:
 ![rest](https://user-images.githubusercontent.com/2781759/78183327-63569800-7470-11ea-8561-c3b547ce9001.gif)
 
