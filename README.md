@@ -34,7 +34,7 @@ $ docker-compose up -d --build
 
 Loging to Docker:
 ```
-docker exec -it ca5ed4709f2845c2d21df4064962c8bfa267c3bdd0d24b4886844ed3b6ac2c93 bash
+❯ docker exec -it ca5ed4709f2845c2d21df4064962c8bfa267c3bdd0d24b4886844ed3b6ac2c93 bash
 ```
 Install `swagger-ui`:
 ```
@@ -61,7 +61,6 @@ zpm:USER>install swagger-ui
 [USER|swagger-ui]       Configure SUCCESS
 [USER|swagger-ui]       Activate SUCCESS
 zpm:USER>
-
 ```
 Access to swagger-ui (Username: _SYSTEM, Password: SYS)
 ```
